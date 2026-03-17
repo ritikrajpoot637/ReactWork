@@ -11,7 +11,7 @@ import ConditanalRendering from './ConditanalRendering'
 import UseEffect from './UseEffect'
 import UseMemo from './UseMemo'
 import UseCallBackAndReactMemo from './UseCallBackAndReactMemo'
-import OldForm from './Foms/oldForm'
+import OldForm from './Forms/OldForm'
 function App() {
   return (<>
     <Greting name="ritik"/>
