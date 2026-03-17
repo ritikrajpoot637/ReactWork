@@ -3,7 +3,7 @@ import {useRef} from 'react'
 
 function UseRef() {
     const inpRef=useRef();
-    const ref=useRef(1);
+    let ref=useRef(1);
 
     const ClickmeFocus=()=>{
         inpRef.current.focus();
