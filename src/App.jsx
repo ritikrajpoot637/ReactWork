@@ -12,6 +12,10 @@ import UseEffect from './UseEffect'
 import UseMemo from './UseMemo'
 import UseCallBackAndReactMemo from './UseCallBackAndReactMemo'
 import OldForm from './Forms/OldForm'
+import NewForm from './Forms/NewForm'
+import NestedForm from './Forms/NestedForm'
+import OptimitcFomsByUseOptimetic from './Forms/OptimitcFomsByUseOptimetic'
+import SmartFeedBackform from './Forms/SmartFeedBackform'
 function App() {
   return (<>
     <Greting name="ritik"/>
@@ -25,6 +29,10 @@ function App() {
     <UseMemo/>
     <UseCallBackAndReactMemo/>
     <OldForm/>
+    <NewForm/>
+    <NestedForm/>
+    <OptimitcFomsByUseOptimetic/>
+    <SmartFeedBackform/>
     </>
   ) 
 }

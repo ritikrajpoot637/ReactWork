@@ -17,6 +17,7 @@ const UseCallBackAndReactMemo = () => {
 
   return (
    <>
+   <hr/>
     <div>UseCallBackAndReactMemo</div>
     <div>
       <p>Count: {count}</p>

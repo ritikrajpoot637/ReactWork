@@ -4,8 +4,11 @@ const OldForm=  () => {
 
     const Submit=async(e)=>{
       e.preventDefault();
-      const name=e.target.name.value;
-      console.log(name);
+
+      //const name=e.target.name.value;
+      let formData=new FormData(e.target)
+      let name=formData.get('name')
+      localStorage.setItem("data",JSON.stringify(name));
     //   await fetch("url" ,{
     //     method:"post",
     //     body:JSON.stringify({name})
@@ -15,6 +18,7 @@ const OldForm=  () => {
 
   return (
     <>
+    <hr/>
     <div>oldForm</div>
     <form onSubmit={Submit}>
         <label htmlFor='1'>Name</label>
