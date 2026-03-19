@@ -13,6 +13,9 @@ const SmartFeedBackform = () => {
     });
 
     return (
+        <>
+        <hr/>
+        <div>SmartForm with useOptimistic</div>
         <div className="container mt-5">
             <div className="card shadow-sm mx-auto" style={{ maxWidth: "500px" }}>
                 <div className="card-body">
@@ -68,6 +71,8 @@ const SmartFeedBackform = () => {
                 </div>
             </div>
         </div>
+        </>
+        
     )
 }
 

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Greting from './Greeting'
 import { GreetinObj } from './GreetinObj'
 import UseRef from './UseRef'
@@ -16,6 +16,8 @@ import NewForm from './Forms/NewForm'
 import NestedForm from './Forms/NestedForm'
 import OptimitcFomsByUseOptimetic from './Forms/OptimitcFomsByUseOptimetic'
 import SmartFeedBackform from './Forms/SmartFeedBackform'
+import OldwayFetch from './fech/OldwayFetch'
+import NewwayFetch from './fech/NewwayFetch'
 function App() {
   return (<>
     <Greting name="ritik"/>
@@ -33,6 +35,10 @@ function App() {
     <NestedForm/>
     <OptimitcFomsByUseOptimetic/>
     <SmartFeedBackform/>
+    <OldwayFetch/>
+    <Suspense fallback={<p>Loading...</p>}>
+    <NewwayFetch/> 
+    </Suspense>
     </>
   ) 
 }
